@@ -1,0 +1,14 @@
+# Name: Ali Falamarzi
+# NSID: ylw576
+# Student Number: 11337462
+
+FROM node:latest
+EXPOSE 3000
+WORKDIR /app/frontend
+RUN npm install create-react-app
+RUN npx create-react-app postsapp --use-npm
+WORKDIR /app/frontend/postsapp/
+RUN npm install react-router-dom bootstrap react-icons --save
+ADD frontend ./src/
+WORKDIR /app/frontend/postsapp/src
+CMD ["npm", "start"]

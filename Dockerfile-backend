@@ -1,0 +1,11 @@
+# Name: Ali Falamarzi
+# NSID: ylw576
+# Student Number: 11337462
+
+FROM node:latest
+EXPOSE 8080
+WORKDIR /app/backend
+RUN npm install -g express nodemon mysql body-parser cors
+ENV NODE_PATH=/usr/local/lib/node_modules
+ADD backend ./
+CMD ["node", "server.js"]

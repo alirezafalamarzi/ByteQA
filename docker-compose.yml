@@ -1,0 +1,61 @@
+# Name: Ali Falamarzi
+# NSID: ylw576
+# Student Number: 11337462
+
+
+version: "3.9"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+    container_name: frontend-container
+    ports:
+      - "3000:3000"
+    # volumes:
+    #   - frontend:/app/frontend
+    stdin_open: true
+    tty: true
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+    container_name: backend-container
+    ports:
+      - "8080:8080"
+    # volumes:
+    #   - backend:/app/backend
+    stdin_open: true
+    tty: true
+
+  mysql-db:
+    image: mysql:latest
+    container_name: mysql-container
+    restart: always
+    volumes:
+      - dbfiles:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'admin'
+    healthcheck:
+            test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-uroot", "-padmin"]
+            timeout: 5s
+            retries: 3
+    stdin_open: true
+    tty: true
+volumes:
+  # frontend:
+  # backend:
+  dbfiles:
+
+
+
+
+
+
