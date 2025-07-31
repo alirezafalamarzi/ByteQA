@@ -1,5 +1,5 @@
 # ByteQA
-Social platform for posting programming questions and responses. This project was completed in only 5 days from the ground up back in December 2023.
+A Social Platform for posting programming questions and responses. This project was completed in only 5 days from the ground up back in December 2023.
 I moved the repository from my university's GitLab account to my personal Github account.
 
 # Features:
