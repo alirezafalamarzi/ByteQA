@@ -8,4 +8,4 @@ Social platform for posting programming questions and responses.
 - Search for keywords or users
 
 # Video
-[![Watch the video](https://raw.githubusercontent.com/alirezafalamarzi/QuestionBoard/main/thumbnail.png)](https://raw.githubusercontent.com/alirezafalamarzi/QuestionBoard/main/video.mp4)
+[![Watch the video](https://raw.githubusercontent.com/alirezafalamarzi/QuestionBoard/main/thumbnail.png)](https://raw.githubusercontent.com/alirezafalamarzi/QuestionBoard/main/ByteQA.mp4)
