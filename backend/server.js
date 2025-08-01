@@ -1,9 +1,3 @@
-/*
- *   Name: Ali Falamarzi
- *   NSID: ylw576
- *   Student Number: 11337462
- *-------------------------------------
- */
 'use strict'
 const express = require('express');
 const bodyParser = require('body-parser');
