@@ -1,8 +1,3 @@
-/**
- * Name: Ali Falamarzi
- * NSID: ylw576
- * Student No: 11337462
- */
 
 import React, { useState } from "react";
 import { Link, redirect, useNavigate } from "react-router-dom";

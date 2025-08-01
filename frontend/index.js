@@ -1,8 +1,4 @@
-/**
- * Name: Ali Falamarzi
- * NSID: ylw576
- * Student No: 11337462
- */
+
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

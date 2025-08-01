@@ -1,6 +1,3 @@
-# Name: Ali Falamarzi
-# NSID: ylw576
-# Student Number: 11337462
 
 FROM node:latest
 EXPOSE 8080

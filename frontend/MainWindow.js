@@ -1,8 +1,3 @@
-/**
- * Name: Ali Falamarzi
- * NSID: ylw576
- * Student No: 11337462
- */
 
 import { useState } from "react";
 import Channels from "./Channels";
